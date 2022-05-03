@@ -60,14 +60,14 @@ services:
       - ms-network
 
   naming-server:
-    image: naming-server:0.0.1-SNAPSHOT
+    image: fabianoalbuquerque/naming-server:0.0.1-SNAPSHOT
     ports:
       - 8761:8761
     networks:
       - ms-network
 
   api-gateway:
-    image: api-gateway:0.0.1-SNAPSHOT
+    image: fabianoalbuquerque/api-gateway:0.0.1-SNAPSHOT
     ports:
       - 8765:8765
     depends_on:
@@ -83,7 +83,7 @@ services:
       - ms-network
 
   book-service:
-    image: book-service:0.0.1-SNAPSHOT
+    image: fabianoalbuquerque/book-service:0.0.1-SNAPSHOT
     restart: always
     environment:
       TZ: America/Sao_Paulo
@@ -108,7 +108,7 @@ services:
       - ms-network
 
   cambio-service:
-    image: cambio-service:0.0.1-SNAPSHOT
+    image: fabianoalbuquerque/cambio-service:0.0.1-SNAPSHOT
     restart: always
     environment:
       TZ: America/Sao_Paulo
