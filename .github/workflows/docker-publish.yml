@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-java@v3.2.0
         with:
           java-version: '17'
-          distribution: 'zulu'
+          distribution: 'adopt'
          
       - name: Build Eureka Naming Server Docker Image
         working-directory: ./naming-server
